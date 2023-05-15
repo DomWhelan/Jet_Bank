@@ -5,29 +5,208 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3c58998-c432-43b9-9b7d-04335f572462" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/junit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/junit-debug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/junit-debug.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/junit-debug.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/junit.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/junit.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/balanced-match/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/balanced-match/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/balanced-match/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/balanced-match/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/balanced-match/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/brace-expansion/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/brace-expansion/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/brace-expansion/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/brace-expansion/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-map/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-map/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-map/README.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-map/example/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-map/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-map/test/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/graceful-readlink/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/graceful-readlink/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/graceful-readlink/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/graceful-readlink/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/graceful-readlink/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/graceful-readlink/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/bin/junit-debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/bin/junit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/lib/browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/lib/brush.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/lib/cli.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/lib/reporter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/junit/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimatch/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimatch/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimatch/minimatch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimatch/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/dist/alias.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/dist/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/dist/path.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/dist/pmatch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/dist/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/dist/yaku.browser.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/dist/yaku.browser.global.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/dist/yaku.core.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/dist/yaku.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/Deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/Observable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/_.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/any.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/browser.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/callbackify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/genIterator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/guard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/if.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/isPromise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/never.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/promisify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/retry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/sleep.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/throw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/timeout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/yaku.aplus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/yaku.core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/yaku.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/lib/yaku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/node_modules/yaku/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nofs/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/dist/yaku.browser.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/dist/yaku.browser.global.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/dist/yaku.core.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/dist/yaku.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/Deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/Observable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/_.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/any.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/browser.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/callbackify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/genIterator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/guard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/if.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/isPromise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/never.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/promisify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/retry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/sleep.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/throw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/timeout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/yaku.aplus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/yaku.core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/yaku.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/lib/yaku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/yaku/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jetbanking/banking/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jetbanking/banking/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jetbanking/banking/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jetbanking/date/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jetbanking/date/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jetbanking/people/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jetbanking/people/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jetbanking/people/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jetbanking/people/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2PhubICGZB0NA6BgASbxBSaXOfJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "onboarding.tips.debug.path": "C:/Users/domin/IdeaProjects/JetBank/src/main/java/org/example/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jetbanking.people" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AccountTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="JetBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JetBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jetbanking.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jetbanking.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.jetbanking.banking.AccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountTest" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,15 +218,7 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

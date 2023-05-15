@@ -1,2 +1,4 @@
-package com.jetbanking.people;public class Customer {
+package com.jetbanking.people;
+
+public class Customer extends Person {
 }
