@@ -1,13 +1,13 @@
 package com.jetbanking.date;
-
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
+import java.util.Calendar;
 
-public class Date {
+public class MyDate {
 
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("MMM-dd-yyyy");
 
     public String getDateNow(){
-        return SimpleDateFormat.getDateInstance().format(dateFormat);
+        Calendar cal = Calendar.getInstance();
+        return dateFormat.format(cal.getTime());
     }
 }

@@ -1,31 +1,36 @@
 package com.jetbanking.banking;
-import com.jetbanking.date.Date;
+import com.jetbanking.date.MyDate;
+import com.jetbanking.exceptions.InvalidAccountTypeException;
 import com.jetbanking.people.Customer;
-import java.time.LocalDate;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Account {
 
     private int id;
     private String type;
-    private double balance;
+    private final ArrayList<String> validTypes = new ArrayList<>(Arrays.asList("SAVINGS","CHECKING","MMA","CD","IRA","BROKERAGE"));
+    //  MMA - Money Market Account, CD - Certificate of Deposit, IRA - Individual Retirement Arrangement
+    private double balance = 0;
     private Customer owner;
-    private String creationDate;
+    private final String creationDate = new MyDate().getDateNow();
 
     private String status;
 
-    public Account(int id, String type, Customer owner) {
-        this.id = id;
-        this.type = type;
-        this.balance = 0;
-        this.owner = owner;
-//        creationDate = new Date().getDateNow();
+    public Account(){}
+
+    public Account(int id, String type, Customer owner) throws InvalidAccountTypeException {
+        this.setId(id);
+        this.setType(type);
+        this.setOwner(owner);
     }
 
-    public Account(int id, String type, double balance, Customer owner) {
-        this.id = id;
-        this.type = type;
-        this.balance = balance;
-        this.owner = owner;
+    public Account(int id, String type, double balance, Customer owner) throws InvalidAccountTypeException {
+        this.setId(id);
+        this.setType(type);
+        this.setBalance(balance);
+        this.setOwner(owner);
     }
 
     public int getId() {
@@ -37,11 +42,16 @@ public class Account {
     }
 
     public String getType() {
+
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setType(String type) throws InvalidAccountTypeException {
+        if(validTypes.contains(type.toUpperCase())){
+            this.type = type.toUpperCase();}
+        else {
+            throw new InvalidAccountTypeException();
+        }
     }
 
     public double getBalance() {
@@ -60,9 +70,9 @@ public class Account {
         this.owner = owner;
     }
 
-//    public String getCreationDate() {
-//        return creationDate;
-//    }
+    public String getCreationDate() {
+        return creationDate;
+    }
 //
 //    public void setCreationDate(String creationDate) {
 //        this.creationDate = creationDate;
