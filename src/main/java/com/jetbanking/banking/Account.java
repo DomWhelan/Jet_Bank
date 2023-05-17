@@ -1,7 +1,8 @@
 package com.jetbanking.banking;
 import com.jetbanking.date.MyDate;
 import com.jetbanking.exceptions.InvalidAccountTypeException;
-import com.jetbanking.people.Customer;
+import com.jetbanking.exceptions.OverdrawnException;
+import com.jetbanking.people.Client;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,20 +14,20 @@ public class Account {
     private final ArrayList<String> validTypes = new ArrayList<>(Arrays.asList("SAVINGS","CHECKING","MMA","CD","IRA","BROKERAGE"));
     //  MMA - Money Market Account, CD - Certificate of Deposit, IRA - Individual Retirement Arrangement
     private double balance = 0;
-    private Customer owner;
+    private Client owner;
     private final String creationDate = new MyDate().getDateNow();
 
     private String status;
 
     public Account(){}
 
-    public Account(int id, String type, Customer owner) throws InvalidAccountTypeException {
+    public Account(int id, String type, Client owner) throws InvalidAccountTypeException {
         this.setId(id);
         this.setType(type);
         this.setOwner(owner);
     }
 
-    public Account(int id, String type, double balance, Customer owner) throws InvalidAccountTypeException {
+    public Account(int id, String type, double balance, Client owner) throws InvalidAccountTypeException {
         this.setId(id);
         this.setType(type);
         this.setBalance(balance);
@@ -62,21 +63,17 @@ public class Account {
         this.balance = balance;
     }
 
-    public Customer getOwner() {
+    public Client getOwner() {
         return owner;
     }
 
-    public void setOwner(Customer owner) {
+    public void setOwner(Client owner) {
         this.owner = owner;
     }
 
     public String getCreationDate() {
         return creationDate;
     }
-//
-//    public void setCreationDate(String creationDate) {
-//        this.creationDate = creationDate;
-//    }
 
     public String getStatus() {
         return status;
@@ -84,5 +81,14 @@ public class Account {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public double withdraw(double amount) throws OverdrawnException {
+        if(amount <= balance){
+            balance -= amount;
+        } else {
+            throw new OverdrawnException();
+        }
+        return balance;
     }
 }
