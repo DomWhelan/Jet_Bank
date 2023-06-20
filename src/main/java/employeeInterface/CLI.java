@@ -9,14 +9,14 @@ public class CLI {
     private static final String TEXT_BLUE = "\u001B[34m";
     private static final String TEXT_RESET = "\u001B[0m";
 
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         System.out.println(TEXT_YELLOW + """
-                JET BANK
-                
-                AUTHORIZED USERS ONLY
-                
-                _________________________________________________
+                \tJET BANK
+                \t_________________________________________________
+                \tAUTHORIZED USERS ONLY
+                \t_________________________________________________
                 """);
         userInterface();
 

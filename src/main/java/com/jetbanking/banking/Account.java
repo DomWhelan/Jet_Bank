@@ -84,11 +84,13 @@ public class Account {
     }
 
     public double withdraw(double amount) throws OverdrawnException {
+        balance = this.getBalance();
         if(amount <= balance){
             balance -= amount;
+            this.setBalance(balance);
         } else {
             throw new OverdrawnException();
         }
-        return balance;
+        return this.balance;
     }
 }
