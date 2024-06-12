@@ -1,9 +1,11 @@
 package com.jetbanking.people;
 
+import java.util.Date;
+
 public abstract class Person {
     private String firstName;
     private String lastName;
-    private int age;
+    private Date birthDate;
 
     public String getFirstName() {
         return firstName;
@@ -21,12 +23,12 @@ public abstract class Person {
         this.lastName = lastName;
     }
 
-    public int getAge() {
-        return age;
+    public Date getBirthDate() {
+        return birthDate;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setBirthDate(Date dateOfBirth) {
+        this.birthDate = dateOfBirth;
     }
 
     @Override
@@ -34,7 +36,7 @@ public abstract class Person {
         return "Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", age=" + age +
+                ", birth date=" + birthDate +
                 '}';
     }
 }
