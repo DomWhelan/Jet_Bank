@@ -1,5 +1,11 @@
 package employeeInterface;
+import com.jetbanking.people.Client;
+import dataPools.mysql.ClientDatabase;
+import java.sql.SQLException;
+import java.sql.SQLOutput;
 import java.util.Scanner;
+
+
 
 public class CLI {
 
@@ -8,9 +14,13 @@ public class CLI {
     private static final String TEXT_YELLOW = "\u001B[33m";
     private static final String TEXT_BLUE = "\u001B[34m";
     private static final String TEXT_RESET = "\u001B[0m";
+    private static final String URL = System.getenv("MYSQL_DB_HOST");
+    private static final String USERNAME = System.getenv("MYSQL_DB_USERNAME");
+    private static final String PASSWORD = System.getenv("MYSQL_DB_PASSWORD");
 
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws SQLException {
         Scanner input = new Scanner(System.in);
         System.out.println(TEXT_YELLOW + """
                 \tJET BANK
@@ -22,7 +32,7 @@ public class CLI {
 
     }
 
-    public static void userInterface() {
+    public static void userInterface() throws SQLException {
         Scanner input = new Scanner(System.in);
         boolean quit = false;
         while (!quit) {
@@ -44,6 +54,7 @@ public class CLI {
 
                 case "2":
                     // Create a class to edit an account
+                    searchMenu();
                     break;
 
                 case "3":
@@ -71,5 +82,21 @@ public class CLI {
                     break;
             }
         }
+    }
+    private static void searchMenu() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter First Name of Client");
+        String firstNameParam = input.next();
+        System.out.println("Please enter Last Name of Client");
+        String lastNameParam = input.next();
+
+        Client clientReturned = ClientDatabase.getClientByName(firstNameParam, lastNameParam, URL, USERNAME, PASSWORD);
+
+        if(clientReturned == null){
+            System.out.println(TEXT_RED + "NO RESULTS...PLEASE CHECK SEARCH CRITERIA");
+        }else{
+            System.out.println(clientReturned);
+        }
+
     }
 }
