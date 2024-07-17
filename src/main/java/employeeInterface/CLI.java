@@ -1,8 +1,10 @@
 package employeeInterface;
+import com.jetbanking.exceptions.InvalidInput;
 import com.jetbanking.people.Client;
 import dataPools.mysql.ClientDatabase;
 import java.sql.SQLException;
 import java.sql.SQLOutput;
+import java.util.Objects;
 import java.util.Scanner;
 
 
@@ -18,10 +20,11 @@ public class CLI {
     private static final String USERNAME = System.getenv("MYSQL_DB_USERNAME");
     private static final String PASSWORD = System.getenv("MYSQL_DB_PASSWORD");
 
+    private static final Scanner input = new Scanner(System.in);
 
 
-    public static void main(String[] args) throws SQLException {
-        Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+//        Scanner input = new Scanner(System.in);
         System.out.println(TEXT_YELLOW + """
                 \tJET BANK
                 \t_________________________________________________
@@ -32,12 +35,12 @@ public class CLI {
 
     }
 
-    public static void userInterface() throws SQLException {
-        Scanner input = new Scanner(System.in);
+    public static void userInterface() {
+//        Scanner input = new Scanner(System.in);
         boolean quit = false;
         while (!quit) {
             System.out.println(TEXT_BLUE + "\t1. " + TEXT_RESET + "Create Account");
-            System.out.println(TEXT_BLUE + "\t2. " + TEXT_RESET + "Edit Account");
+            System.out.println(TEXT_BLUE + "\t2. " + TEXT_RESET + "Edit Client");
             System.out.println(TEXT_BLUE + "\t3. " + TEXT_RESET + "Create New Client");
             System.out.println(TEXT_BLUE + "\t4. " + TEXT_RESET + "Edit Client Information");
             System.out.println(TEXT_BLUE + "\t5. " + TEXT_RESET + "Open New Loan");
@@ -59,6 +62,7 @@ public class CLI {
 
                 case "3":
                     // Create a class to create new client
+                    createClient();
                     break;
 
                 case "4":
@@ -84,8 +88,8 @@ public class CLI {
         }
     }
     private static void searchMenu() {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter First Name of Client");
+//        Scanner input = new Scanner(System.in);
+        System.out.println("\nPlease enter First Name of Client");
         String firstNameParam = input.next();
         System.out.println("Please enter Last Name of Client");
         String lastNameParam = input.next();
@@ -98,5 +102,57 @@ public class CLI {
             System.out.println(clientReturned);
         }
 
+    }
+
+    private static void createClient() {
+        boolean exit = false;
+        while(!exit){
+            System.out.println("\nType \"q\" to Quit to Main Menu");
+            System.out.println("\nPlease enter First Name of Client");
+            String firstNameParam = input.next();
+            if(Objects.equals(firstNameParam.toLowerCase(), "q")){
+                exit=true;
+                break;
+            }
+            System.out.println("Please enter Last Name of Client");
+            String lastNameParam = input.next();
+            if(Objects.equals(lastNameParam.toLowerCase(), "q")){
+                exit=true;
+                break;
+            }
+            System.out.println("Please enter email address");
+            String email = input.next();
+            if(Objects.equals(email.toLowerCase(), "q")){
+                exit=true;
+                break;
+            }
+            System.out.println("Please enter sin number");
+            String sin = input.next();
+            if(Objects.equals(sin.toLowerCase(), "q")){
+                exit=true;
+                break;
+            }
+            try {
+                Client clientToAdd = new Client(firstNameParam, lastNameParam, email, sin);
+                System.out.println("\nNew Client created: " +
+                        "\n\tFirst Name: " + clientToAdd.getFirstName() +
+                        "\n\tLast Name:  " + clientToAdd.getLastName() +
+                        "\n\tEmail:      " + clientToAdd.getEmail() +
+                        "\n\tSIN:        " + clientToAdd.getSin());
+                System.out.println("\nConfirm (y):");
+                String confirm = input.next().toLowerCase();
+                if(Objects.equals(confirm, "y")){
+                    // insert function to add to DataBase
+                    exit=true;
+                }
+                if(Objects.equals(confirm, "q")){
+                    exit=true;
+                    break;
+                }
+
+            } catch (InvalidInput e) {
+                System.out.println("Error: " + e);
+            }
+        }
     }
 }
